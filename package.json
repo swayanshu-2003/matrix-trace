@@ -1,0 +1,66 @@
+{
+  "name": "matrix-trace",
+  "version": "1.0.0",
+  "description": "An interactive, high-performance Matrix digital background component for React with dynamic cursor wake and glyph mutation.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "type-check": "tsc --noEmit",
+    "playground": "npm --prefix playground run dev",
+    "playground:build": "npm --prefix playground run build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "matrix",
+    "matrix-trace",
+    "matrix-rain",
+    "matrix-bg",
+    "matrix-trail",
+    "canvas",
+    "background",
+    "interactive",
+    "cursor-trail",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Swayanshu (https://github.com/swayanshu-2003)",
+  "homepage": "https://matrix-trace.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swayanshu-2003/matrix-trace.git"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0 || >=17.0.0 || >=18.0.0 || >=19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3"
+  }
+}

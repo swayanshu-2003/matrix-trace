@@ -1,0 +1,11 @@
+src/
+node_modules/
+playground/
+*.tsbuildinfo
+tsconfig.json
+tsup.config.ts
+App.tsx
+MatrixTrace.tsx
+.gitignore
+.git
+*.log
